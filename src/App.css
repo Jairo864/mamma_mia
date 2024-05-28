@@ -1,0 +1,58 @@
+
+.entrada {
+  background-image: url("./assets/img/pizza_home.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.entrada::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); 
+  z-index: 1;
+}
+
+.texto_home h1,
+.texto_home h5 {
+  color: white;
+  text-align: center;
+  position: relative;
+  z-index: 2; 
+}
+
+.custom-list {
+  list-style: none;
+  padding-left: 0;
+}
+.custom-list li::before {
+  content: "🍕"; 
+  margin-right: 10px;
+}
+.img {
+  height: 100px;
+}
+
+.card-title {
+  font-weight: bold;
+  
+}
+
+.precio_carro {
+  margin-bottom: 0;
+}
+
+nav {
+  background-color: rgb(43, 157, 165);
+  padding-left: 100px !important;
+  padding-right: 100px !important;
+}
+
+.card-text-cant {
+  padding-left: 5px;
+  padding-right: 5px;
+  }
